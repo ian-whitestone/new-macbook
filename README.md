@@ -51,6 +51,36 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
     - Cobalt2: https://github.com/wesbos/cobalt2
     - Pylint
 
+- Sublime Text User Settings
+
+```json
+{
+    "bold_folder_labels": true,
+    "caret_extra_bottom": 2,
+    "caret_extra_top": 2,
+    "caret_extra_width": 3,
+    "caret_style": "phase",
+    "color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
+    "highlight_line": true,
+    "highlight_modified_tabs": true,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "indent_guide_options":
+    [
+        "draw_normal",
+        "draw_active"
+    ],
+    "line_padding_bottom": 1,
+    "line_padding_top": 1,
+    "theme": "Cobalt2.sublime-theme",
+    "wide_caret": true,
+    "translate_tabs_to_spaces": true,
+    "rulers": [80]
+}
+```
+
 # Other things to Setup
 
 - iCloud
