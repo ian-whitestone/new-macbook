@@ -14,10 +14,11 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
 - Spotify
 - Slack
 - Flux
-- SizeUp: http://www.irradiatedsoftware.com/sizeup/
+- Divvy: http://mizage.com/divvy/
 	- Used for replicating the only thing I liked about Windows: the cmd + arrow functionality to snap applications to the left/right of the screen, or to make them full screen
 - Postico: https://eggerapps.at/postico/
-	
+- LICEcap: https://www.cockos.com/licecap/
+    - screen recording software
 
 # Random things to install
 
@@ -49,37 +50,16 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
 - Sublime text packages:
     - Autodocstring: https://packagecontrol.io/packages/AutoDocstring
     - Cobalt2: https://github.com/wesbos/cobalt2
-    - Pylint
+    - Pylint:
+        - First install `SublimeLinter`, then `SublimeLinter-pylint`
+        - Make sure you have pylint installed globally (`conda install pylint`)
+        - Run `which pylint` to get the path, here's my output `/Users/ianwhitestone/miniconda3/bin/pylint`
+        - see `sublime-linter-user-settings.json` for my settings
+    - GitGutter
+        - Added `"show_line_annotation": false` in user settings
 
-- Sublime Text User Settings
+- see `sublime-user-settings.json` for my Sublime Text User Settings
 
-```json
-{
-    "bold_folder_labels": true,
-    "caret_extra_bottom": 2,
-    "caret_extra_top": 2,
-    "caret_extra_width": 3,
-    "caret_style": "phase",
-    "color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
-    "highlight_line": true,
-    "highlight_modified_tabs": true,
-    "ignored_packages":
-    [
-        "Vintage"
-    ],
-    "indent_guide_options":
-    [
-        "draw_normal",
-        "draw_active"
-    ],
-    "line_padding_bottom": 1,
-    "line_padding_top": 1,
-    "theme": "Cobalt2.sublime-theme",
-    "wide_caret": true,
-    "translate_tabs_to_spaces": true,
-    "rulers": [80]
-}
-```
 
 # Other things to Setup
 
