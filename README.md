@@ -13,12 +13,15 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
 - SublimeText
 - Spotify
 - Slack
+- R: http://cran.utstat.utoronto.ca/
+- R studio: https://www.rstudio.com/
 - Flux
 - Divvy: http://mizage.com/divvy/
 	- Used for replicating the only thing I liked about Windows: the cmd + arrow functionality to snap applications to the left/right of the screen, or to make them full screen
 - Postico: https://eggerapps.at/postico/
 - LICEcap: https://www.cockos.com/licecap/
     - screen recording software
+- Google Drive: https://www.google.com/drive/download/
 
 # Random things to install
 
@@ -35,6 +38,16 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
         email = XXX@gmail.com
 ```
 - Generate a new github ssh key: https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+
+- Postgres: [Instructions](https://www.codementor.io/engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb)
+    - `brew install postgresql`
+    - `pg_ctl -D /usr/local/var/postgres start && brew services start postgresql`
+
+- Jupyter Lab
+    - Do the following in your base environment:
+        - `conda install jupyter -y`
+        - `conda install -c conda-forge jupyterlab -y`
+        - `conda install nb_conda -y`
 
 # Application Specific Setups
 
@@ -57,6 +70,7 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
         - see `sublime-linter-user-settings.json` for my settings
     - GitGutter
         - Added `"show_line_annotation": false` in user settings
+    - [Whitespace](https://github.com/randy3k/Whitespace): trim trailing whitespace
 
 - see `sublime-user-settings.json` for my Sublime Text User Settings
 
