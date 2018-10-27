@@ -28,6 +28,7 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
 - Homebrew: https://brew.sh/
 - Oh-my-zsh: https://github.com/robbyrussell/oh-my-zsh
 - Conda: https://conda.io/miniconda.html
+- Redis: https://medium.com/@petehouston/install-and-config-redis-on-mac-os-x-via-homebrew-eb8df9a4f298
 - git: `brew install git`
 - Update your `~/.gitconfig`
 
