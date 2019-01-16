@@ -57,6 +57,9 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
 - Download cobalt theme: https://github.com/wesbos/Cobalt2-iterm
 - Setup natural text editing mode: https://apple.stackexchange.com/questions/136928/using-alt-cmd-right-left-arrow-in-iterm
 - Add the following to have your command prompt on a newline: `PROMPT="$PROMPT"$'\n'"%{$terminfo[bold]$fg[red]%}→ %{$reset_color%}"`
+- Enable scrolling in vim: 
+    - add `set mouse=a` to `~/.vimrc` (create it if it doesn't exist)
+    - https://superuser.com/questions/238362/enable-mouse-for-scrolling-only-in-vim-in-iterm-macosx
 
 ## Sublime Text 3
 - Launch sublime from terminal, and be able to open files/folders in sublime with `$ sublime my_file.txt`: https://ashleynolan.co.uk/blog/launching-sublime-from-the-terminal
