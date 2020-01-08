@@ -23,6 +23,8 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
     - screen recording software
 - Google Drive: https://www.google.com/drive/download/
 
+Nice [twitter thread](https://twitter.com/mxstbr/status/1214454416432087045) on other Mac OS utilities.
+
 # Random things to install
 
 - Homebrew: https://brew.sh/
