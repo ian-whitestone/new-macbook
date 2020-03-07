@@ -13,8 +13,22 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
 - SublimeText
 - Spotify
 - Slack
-- R: http://cran.utstat.utoronto.ca/
-- R studio: https://www.rstudio.com/
+- R
+    - http://cran.utstat.utoronto.ca/
+    - R studio: https://www.rstudio.com/
+    - R packages
+        - ggplot2
+        - data.table
+        - dtplyr
+        - dplyr
+        - scales
+        - zoo
+        - RColorBrewer
+        - plyr
+        - RPostgreSQL
+        - extrafont
+        - lubridate
+        - gridExtra
 - Flux
 - Divvy: http://mizage.com/divvy/
 	- Used for replicating the only thing I liked about Windows: the cmd + arrow functionality to snap applications to the left/right of the screen, or to make them full screen
@@ -23,14 +37,11 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
     - screen recording software
 - Google Drive: https://www.google.com/drive/download/
 
-Nice [twitter thread](https://twitter.com/mxstbr/status/1214454416432087045) on other Mac OS utilities.
-
 # Random things to install
 
 - Homebrew: https://brew.sh/
 - Oh-my-zsh: https://github.com/robbyrussell/oh-my-zsh
 - Conda: https://conda.io/miniconda.html
-- Redis: https://medium.com/@petehouston/install-and-config-redis-on-mac-os-x-via-homebrew-eb8df9a4f298
 - git: `brew install git`
 - Update your `~/.gitconfig`
 
@@ -51,6 +62,15 @@ Nice [twitter thread](https://twitter.com/mxstbr/status/1214454416432087045) on 
         - `conda install jupyter -y`
         - `conda install -c conda-forge jupyterlab -y`
         - `conda install nb_conda -y`
+    - Get an R kernel available in jupyter lab
+        - Run the following from R in terminal, not RStudio!
+        - `install.packages("devtools")`
+        - `devtools::install_github("IRkernel/IRkernel")`
+        - `IRkernel::installspec()`
+
+- Terraform: https://www.terraform.io/intro/getting-started/install.html
+    - Terraform ships as a binary. I saved it in my home directory
+    - Added the following to my `~/.zshrc`: `export PATH=$HOME/:$PATH`
 
 # Application Specific Setups
 
@@ -59,9 +79,6 @@ Nice [twitter thread](https://twitter.com/mxstbr/status/1214454416432087045) on 
 - Download cobalt theme: https://github.com/wesbos/Cobalt2-iterm
 - Setup natural text editing mode: https://apple.stackexchange.com/questions/136928/using-alt-cmd-right-left-arrow-in-iterm
 - Add the following to have your command prompt on a newline: `PROMPT="$PROMPT"$'\n'"%{$terminfo[bold]$fg[red]%}→ %{$reset_color%}"`
-- Enable scrolling in vim: 
-    - add `set mouse=a` to `~/.vimrc` (create it if it doesn't exist)
-    - https://superuser.com/questions/238362/enable-mouse-for-scrolling-only-in-vim-in-iterm-macosx
 
 ## Sublime Text 3
 - Launch sublime from terminal, and be able to open files/folders in sublime with `$ sublime my_file.txt`: https://ashleynolan.co.uk/blog/launching-sublime-from-the-terminal
@@ -76,7 +93,7 @@ Nice [twitter thread](https://twitter.com/mxstbr/status/1214454416432087045) on 
         - see `sublime-linter-user-settings.json` for my settings
     - GitGutter
         - Added `"show_line_annotation": false` in user settings
-    - [Whitespace](https://github.com/randy3k/Whitespace): trim trailing whitespace
+    - [Trimmer](https://packagecontrol.io/packages/Trimmer): trim trailing whitespace
 
 - see `sublime-user-settings.json` for my Sublime Text User Settings
 
@@ -86,3 +103,47 @@ Nice [twitter thread](https://twitter.com/mxstbr/status/1214454416432087045) on 
 - iCloud
 - vimrc: https://github.com/amix/vimrc
 
+# Python
+
+For some reason, Mac OS still ships with Python 2.7 (as of March 7, 2020). So install Python 3:
+
+`brew install python3`
+
+## pyenv
+
+[pyenv](https://github.com/pyenv/pyenv) pyenv lets you easily switch between multiple versions of Python. Install it with brew:
+
+`brew install pyenv`
+
+Validate the installation worked:
+
+```bash
+→ pyenv --version
+pyenv 1.2.16
+```
+
+Now install Python 3.7.6, and set it so that it is the global Python.
+
+```bash
+pyenv install 3.7.6
+pyenv global 3.7.6
+```
+
+Validate that worked properly by running:
+
+```bash
+→ python --version
+Python 3.7.6
+
+→ which python
+/Users/ianwhitestone/.pyenv/shims/python
+```
+
+
+**Poetry**
+
+Install poetry with:
+
+`curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python`
+
+Then add `source $HOME/.poetry/env` to your `~/.zshrc` or `~/.bash_profile`, and then re-source your shell with `source ~/.zshrc` or `source ~/.bash_profile`.
