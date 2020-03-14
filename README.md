@@ -76,9 +76,8 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
 
 ## iTerm2
 
-- Download cobalt theme: https://github.com/wesbos/Cobalt2-iterm
+- [Setup instructions here](https://gist.github.com/kevin-smets/8568070) for oh-my-zsh, powerline font, etc.
 - Setup natural text editing mode: https://apple.stackexchange.com/questions/136928/using-alt-cmd-right-left-arrow-in-iterm
-- Add the following to have your command prompt on a newline: `PROMPT="$PROMPT"$'\n'"%{$terminfo[bold]$fg[red]%}→ %{$reset_color%}"`
 
 ## Sublime Text 3
 - Launch sublime from terminal, and be able to open files/folders in sublime with `$ sublime my_file.txt`: https://ashleynolan.co.uk/blog/launching-sublime-from-the-terminal
