@@ -10,7 +10,6 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
 		- https://vimium.github.io/
 		- https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc
 - iTerm2
-- SublimeText
 - Spotify
 - Slack
 - R
@@ -77,25 +76,54 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
 ## iTerm2
 
 - [Setup instructions here](https://gist.github.com/kevin-smets/8568070) for oh-my-zsh, powerline font, etc.
-- Setup natural text editing mode: https://apple.stackexchange.com/questions/136928/using-alt-cmd-right-left-arrow-in-iterm
+- Profiles setup
+    - Preferences -> Profiles -> Default -> Colors -> Select "solarized light" from *Color Presents..*
 
-## Sublime Text 3
-- Launch sublime from terminal, and be able to open files/folders in sublime with `$ sublime my_file.txt`: https://ashleynolan.co.uk/blog/launching-sublime-from-the-terminal
-- Install package control: https://packagecontrol.io/installation
-- Sublime text packages:
-    - Autodocstring: https://packagecontrol.io/packages/AutoDocstring
-    - Cobalt2: https://github.com/wesbos/cobalt2
-    - Pylint:
-        - First install `SublimeLinter`, then `SublimeLinter-pylint`
-        - Make sure you have pylint installed globally (`conda install pylint`)
-        - Run `which pylint` to get the path, here's my output `/Users/ianwhitestone/miniconda3/bin/pylint`
-        - see `sublime-linter-user-settings.json` for my settings
-    - GitGutter
-        - Added `"show_line_annotation": false` in user settings
-    - [Trimmer](https://packagecontrol.io/packages/Trimmer): trim trailing whitespace
+## VSCode
+* Install `code` shell command, instructions [here](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
 
-- see `sublime-user-settings.json` for my Sublime Text User Settings
+`settings.json`
 
+```
+{
+    "workbench.colorTheme": "Solarized Light",
+    "python.jediEnabled": false,
+    "window.zoomLevel": 0,
+    "data.preview.theme": "light",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "editor.minimap.enabled": false,
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.codeAction.disableRuleComment": {},
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll": true
+    },
+    "editor.formatOnSave": true,
+    "eslint.run": "onSave",
+    "python.languageServer": "Microsoft",
+    "python.linting.flake8Enabled": true,
+    "files.trimTrailingWhitespace": true,
+    "python.linting.flake8Args": [
+        "--config=.flake8"
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "autoDocstring.customTemplatePath": "/Users/ianwhitestone/google_no_types.mustache",
+    "python.linting.mypyEnabled": true,
+    "python.formatting.provider": "black",
+    "python.sortImports.path": "/Users/ianwhitestone/Library/Caches/pypoetry/virtualenvs/domi-IWOYYLRr-py3.7/bin/isort",
+    "python.sortImports.args": [
+        "-rc",
+    ],
+    "python.analysis.disabled": [
+        "inherit-non-class"
+    ],
+}
+```
 
 # Other things to Setup
 
