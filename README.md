@@ -29,11 +29,12 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
         - lubridate
         - gridExtra
 - Flux
-- Divvy: http://mizage.com/divvy/
+- [Rectangle](http://rectangleapp.com) is a free alternative that does the same
 	- Used for replicating the only thing I liked about Windows: the cmd + arrow functionality to snap applications to the left/right of the screen, or to make them full screen
 - Postico: https://eggerapps.at/postico/
 - LICEcap: https://www.cockos.com/licecap/
-    - screen recording software
+    - free screen recording software
+- Cleanshot: https://cleanshot.com
 - Google Drive: https://www.google.com/drive/download/
 
 # Random things to install
@@ -78,6 +79,7 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
 - [Setup instructions here](https://gist.github.com/kevin-smets/8568070) for oh-my-zsh, powerline font, etc.
 - Profiles setup
     - Preferences -> Profiles -> Default -> Colors -> Select "solarized light" from *Color Presents..*
+    - Exported settings some profile settings to [here](https://gist.githubusercontent.com/ian-whitestone/4b45d5a38abf6a5530bdf28e3aca19b0/raw/f57aba1d2502503d89dac1c4200b375f898dc8a1/com.googlecode.iterm2.plist), [stackoverflow ref](https://stackoverflow.com/questions/22943676/how-to-export-iterm2-profiles)
 
 ## VSCode
 * Install `code` shell command, instructions [here](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
