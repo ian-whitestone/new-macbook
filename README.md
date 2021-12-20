@@ -151,18 +151,18 @@ Validate the installation worked:
 pyenv 1.2.16
 ```
 
-Now install Python 3.7.6, and set it so that it is the global Python.
+Now install Python 3.10.0, and set it so that it is the global Python.
 
 ```bash
-pyenv install 3.7.6
-pyenv global 3.7.6
+pyenv install 3.10.0
+pyenv global 3.10.0
 ```
 
-Validate that worked properly by running:
+And then add `eval "$(pyenv init --path)"` to the end of your `~/.zshrc`. Validate that worked properly by running:
 
 ```bash
 → python --version
-Python 3.7.6
+Python 3.10.0
 
 → which python
 /Users/ianwhitestone/.pyenv/shims/python
