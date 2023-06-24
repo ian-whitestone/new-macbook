@@ -34,9 +34,9 @@ I just got a new macbook, and have had to install a bunch of 💩 in order to ge
 ```
 - Generate a new github ssh key: https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 
-- Postgres: [Instructions](https://www.codementor.io/engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb)
-    - `brew install postgresql`
-    - `pg_ctl -D /usr/local/var/postgres start && brew services start postgresql`
+- Postgres:
+    - `brew install postgresql@14`
+    - `brew services start postgresql@14`
 
 - Jupyter Lab
     - Do the following in your base environment:
